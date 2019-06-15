@@ -1,5 +1,6 @@
 <template>
 <div>
+  <Header/>
   <div class="landing-block bg-light">
     <div class="container px-3">
 
@@ -68,3 +69,12 @@
   </div>
 </div>
 </template>
+
+<script>
+import Header from '@/components/header'
+export default {
+  components: {
+    Header,
+  },
+}
+</script>

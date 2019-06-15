@@ -1,44 +1,29 @@
 <template>
-    <div class="jumbotron ui-hero ui-mh-100vh ui-bg-cover ui-bg-fixed ui-bg-overlay-container text-white" style="background-image: url('assets/img/bg/21.jpg');">
-    <div class="ui-bg-overlay bg-dark opacity-50"></div>
-    <div class="container py-5 px-3">
-      <div class="row pt-4">
-        <div class="w-100">
+  <nav class="landing-navbar navbar navbar-expand-lg navbar-dark fixed-top pt-lg-4">
+    <div class="container-fluid px-3">
+      <router-link class="navbar-brand text-big font-weight-bolder line-height-1 text-expanded py-3" :to="{ name: 'home' }">FUNDING</router-link>
 
-          <div class="col-md-11 col-lg-8 col-xl-7 text-center mx-auto mb-5">
-            <h1 class="display-3 font-secondary font-weight-bolder mb-4">User Analytics for Everyone</h1>
-            <div class="lead opacity-75">
-              No more manual data logging, maintaining tracking plans, custom ETL pipelines, or one-off report requests. Just insights.
-            </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#landing-navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="landing-navbar-collapse">
+        <div class="navbar-nav align-items-lg-center ml-lg-4">
+          <router-link class="anchor-link nav-item nav-link" :to="{ name: 'detail' }">Detail</router-link>
+          <router-link class="anchor-link nav-item nav-link" :to="{ name: 'product' }">Product</router-link>
+        </div>
+        <div class="navbar-nav align-items-lg-center ml-auto">
+          <div class="nav-item py-2 py-lg-0 ml-lg-4">
+            <a href="#" class="btn btn-outline-white btn-round borderless">My Page</a>
           </div>
-
-          <div class="col-12 text-center">
-            <a href="#" class="btn btn-lg btn-outline-white">Sign In with
-              <strong>Facebook</strong>
-            </a>
-          </div>
-
-          <div class="lead text-center opacity-50 mt-5 mb-4">
-            <small>or sign up using form</small>
-          </div>
-
-          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <div class="form-row">
-              <div class="col-md mt-2 mt-lg-0">
-                <input type="email" class="form-control form-control-lg form-control-inverted px-3" placeholder="E-mail">
-              </div>
-              <div class="col-md mt-2 mt-lg-0">
-                <input type="password" class="form-control form-control-lg form-control-inverted px-3" placeholder="Password">
-              </div>
-              <div class="col-12 mt-2">
-                <button type="button" class="btn btn-primary btn-block btn-lg font-weight-semibold">Try Now for Free</button>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
-  </div>
+  </nav>
 </template>
 
+<style scoped>
+  .navbar.navbar-dark {
+    background-color: #1366FF;
+  }
+</style>

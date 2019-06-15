@@ -16,6 +16,22 @@ export default {
         require(['@/components/header.vue'], resolve)
       },
     },
+    {
+      title: 'detail',
+      path: '/detail',
+      name: 'detail',
+      component: function(resolve) {
+        require(['@/components/detail.vue'], resolve)
+      },
+    },
+    {
+      title: 'product',
+      path: '/product',
+      name: 'product',
+      component: function(resolve) {
+        require(['@/components/product.vue'], resolve)
+      },
+    },
     
   ],
 }
