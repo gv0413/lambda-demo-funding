@@ -1,0 +1,208 @@
+/* Vue.js 에서 기본적으로 wrap하는 엘리먼트를 위한 스타일*/
+#app{width:100%;height:100%}
+
+/* Select Buttons */
+.section .tab.long li { width: 100px; }
+
+/* Code Mirror */
+.CodeMirror pre.CodeMirror-placeholder { color: #999; }
+
+/* Code Diff */
+.d2h-diff-table { table-layout: auto !important; }
+
+/* Security Assessment - Temporary */
+.code_box2 { padding: 5px; -webkit-overflow-scrolling: touch; }
+.code_box2 h3 { font-weight: bold; font-size: 16px; padding: 10px; border-bottom: 1px solid #EFEFEF; }
+.code_box2 h4 { font-weight: bold; font-size: 15px; padding: 10px 0; margin: 0 10px; border-bottom: 1px solid #EFEFEF; }
+.code_box2 p { padding: 10px 20px; }
+.code_box2 ol { padding: 10px 20px; }
+.code_box2 li { list-style: disc; list-style-position: inside; }
+.code_box2 pre { padding: 10px 20px; }
+.code_box2 a { color: #1366ff; }
+
+/* LNB 레이아웃, 좌측 상단 토큰 심볼 이미지/텍스트 */
+.lnb .token_info .symbol { background: #FFF; position: relative; overflow: hidden; }
+.lnb .token_info .symbol .set { display: block; width: 100%; height: 100%; line-height: 60px; border-radius: 50%; text-align: center; font-size: 25px; }
+.lnb .token_info .symbol .set:after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 1px solid #333; opacity: 0.07; border-radius: 50%; }
+
+.lnb .menu_lst .slst { display: none; }
+.lnb .menu_lst li.on .slst { display: block; }
+
+/* HOVER 시에만 표시되는 IMAGE EDIT 레이어를 업로드 중일 때 항상 표시해주기 위한 스타일 */
+.overview_top .symbol_image a.uploading .logo_edit { display: block; }
+.overview_top .symbol_image a.uploading .ly_tooltip { display: block; left: 5px; bottom: -46px; width: 66px; text-align: center; }
+
+.section .fee_view .graph .inr .bar::after { display: none; }
+.section .fee_view .graph .inr .bar em {content: ""; position: absolute; right: -9px; top: -5px; width: 18px; height: 18px; border: 2px solid #1366ff; border-radius: 50%; background-color:#fff; box-sizing: border-box; }
+.section .fee_view .graph .inr .bar .ly_tooltip { right: -32px; }
+
+.section .fee_view .per input { display: inline-block; width: 46px; margin-left: 20px; color: #abb1bc; font-size: 100%;}
+.section .fee_view .per input.t { color: #1b2733; }
+
+.tbl_key .btn .toast-wrap { position: absolute; left: 0; top: 54px; height: 40px; }
+.tbl_key .btn .toast-wrap .txt_copied { position: relative; left: auto; top: auto; }
+
+/* INPUT Wrapper Disabled */
+.ipt_wrp.disabled .lb { color:#abb1bc; }
+
+/* Paginator Margin 대신 Padding 추가 */
+.paginate a,
+.paginate strong { margin: 0; padding: 0 9px; }
+.paginate .btn_first,
+.paginate .btn_prev,
+.paginate .btn_next,
+.paginate .btn_last { margin: 0; padding: 0 3px; }
+
+/* Selectbox 선택 */
+.lst .item { position: relative; }
+.ipt_select .select_lst .lst li.on a{background-color:#f2f9ff;color:#1366ff;}
+.lst .item.focus a:after { /*position: absolute; content: ''; display: block; top: 0; left: 0; right: 0; bottom: 0; border: 1px solid #333;*/ }
+
+/* Service Selector */
+header .nav.service { top: 54px; left: 180px; right: auto; }
+
+td.empty { text-align: center; }
+
+/* Blink */
+.app.blinkable.waiting { animation: blinker 1s linear infinite; }
+
+@keyframes blinker {
+  50% {
+    opacity: 1.0;
+  }
+  65% {
+    opacity: 0.0;
+  }
+}
+
+/* Main Token/Side Token Analytics Chart Tooltip 을 위한 Style */
+.chart_wrp .chart .tooltip tr td:first-child div{margin-top:2px;width:12px;height:2px;margin-right:8px;}
+.chart_wrp .chart .tooltip tr.bar0 .rectangle{background-color:#1366ff;}
+.chart_wrp .chart .tooltip tr.bar1 .rectangle{background-color:#f0afa7;}
+.chart_wrp .chart .tooltip tr.bar2 .rectangle{background-color:#f8db4c;}
+.chart_wrp .chart .tooltip tr.bar3 .rectangle{background-color:#78cfb3;}
+.chart_wrp .chart .tooltip tr.bar4 .rectangle{background-color:#4a8eb8;}
+.chart_wrp .chart .tooltip tr.bar5 .rectangle{background-color:#8f98d1;}
+.chart_wrp .chart .tooltip tr.bar6 .rectangle{background-color:#e473c4;}
+.chart_wrp .chart .tooltip tr.bar7 .rectangle{background-color:#f27284;}
+.chart_wrp .chart .tooltip tr.bar8 .rectangle{background-color:#feaf2e;}
+.chart_wrp .chart .tooltip tr.bar9 .rectangle{background-color:#81b7ed;}
+.chart_wrp .chart .tooltip tr.bar10 .rectangle{background-color:#62c6d4;}
+.chart_wrp .chart .tooltip tr.bar11 .rectangle{background-color:#5b8cfa;}
+.chart_wrp .chart .tooltip tr.bar12 .rectangle{background-color:#df897e;}
+.chart_wrp .chart .tooltip tr.bar13 .rectangle{background-color:#efca13;}
+.chart_wrp .chart .tooltip tr.bar14 .rectangle{background-color:#4db795;}
+.chart_wrp .chart .tooltip tr.bar15 .rectangle{background-color:#3a7ca5;}
+.chart_wrp .chart .tooltip tr.bar16 .rectangle{background-color:#727cba;}
+.chart_wrp .chart .tooltip tr.bar17 .rectangle{background-color:#c752a6;}
+.chart_wrp .chart .tooltip tr.bar18 .rectangle{background-color:#e05669;}
+.chart_wrp .chart .tooltip tr.bar19 .rectangle{background-color:#fb8e1a;}
+.chart_wrp .chart .tooltip tr.bar20 .rectangle{background-color:#4c91d5;}
+.chart_wrp .chart .tooltip tr.bar21 .rectangle{background-color:#47afbe;}
+.chart_wrp .chart .tooltip tr.bar22 .rectangle{background-color:#3368de;}
+.chart_wrp .chart .tooltip tr {padding-left: 10px; line-height:20px;}
+.chart_wrp .chart .tooltip tr td.name{color:#637282;padding-right:10px;}
+.chart_wrp .chart .tooltip tr td.value{color:#1b2733;padding-left:30px;}
+.chart_wrp .chart .tooltip tr.bar0 td{color:#1366ff;}
+
+/* Main Token/Side Token Analytics Select Box */
+.tx_selected.tp, .select_lst.bx_lst{width:300px;}
+
+/* Contract Deploy Create Contract Select Box */
+.sel_wrp.ipt_select .tp, .sel_wrp.ipt_select .bx_lst{width:100%;}
+
+hr.trans { display: block; padding: 0; margin: 0; height: 0px; visibility: hidden; }
+hr.h10 { height: 10px; }
+
+/* API Simulator */
+.tbl2 tbody tr.api_view .api { height: auto; overflow-y: visible; border-top: 1px solid #eff1f2; line-height: 160%; }
+
+header .nav li a.no-arr::after { display: none; }
+
+/* Account Edit Required */
+.acc_edit label i{display:inline-block;height:16px;margin-left:4px;font-size:18px;color:#1366ff;vertical-align:-3px;font-weight:bold;}
+.acc_edit label .ly_tooltip.password{top:68px;left:92px;font-weight:normal;font-size:14px;}
+.acc_edit label .ly_tooltip.phone{top:64px;left:72px;font-weight:normal;font-size:14px;}
+.acc_edit label .ly_tooltip.company{top:68px;left:77px;font-weight:normal;font-size:14px;}
+.acc_edit label:hover .ly_tooltip{display:block}
+
+/* 테이블 추가 속성 */
+table tr td .sub { font-size: 12px; color: #8c98a4; display: block; padding-top: 8px; }
+table tr td .sub.w-ico { padding-left: 25px; }
+
+
+/* Main Token Create */
+.label_no_margin{ margin-bottom: 0px!important; }
+
+/* 관리자용 */
+
+.admin.form_area { margin: 0; width: 100%; }
+.admin.form_area textarea { resize: vertical; min-height: 100px; }
+
+p.admin.title.warning { display: block; padding: 30px; background: #e05669; color: #Fff; text-align: center; font-size: 20px; animation: anim_admin_title_warning 1s linear infinite; }
+
+@keyframes anim_admin_title_warning {
+  0% {
+    background: #e05669;
+  }
+  50% {
+    background: red;
+  }
+  100% {
+    background: #e05669;
+  }
+}
+
+ul.admin.nav.tab { display: block; border-bottom: 1px solid #DCDEE2; margin-bottom: 30px; }
+ul.admin.nav.tab:after { clear: both; display: block; content: ''; }
+ul.admin.nav.tab li { float: left; border: none; border: 1px solid #DCDEE2; border-bottom: none; height: auto; margin-left: -1px; }
+ul.admin.nav.tab a { background: #FFF; padding: 5px 15px; }
+ul.admin.nav.tab a.on { background: #F7F9FA; font-weight: bold; }
+ul.admin.nav.tab a:hover { background: #FAFAFA; }
+
+.tbl_ipt .append-btn { display: inline-block; width: 100%; height: 50px; line-height: 50px; box-sizing: border-box; border: 1px solid #d0d4d9; text-align: center; font-size: 13px; color: #637282; }
+.tbl_ipt .append-btn:hover { border-color: #BBB; }
+
+textarea.disabled{background-color:#eff1f2;color:#abb1bc;}
+
+.inline-txt-btn input { float: left; height: 30px; line-height: 30px; width: 200px; background: #EEE; padding: 0 10px; font-size: 16px; }
+.inline-txt-btn a { float: left; display: inline-block; height: 30px; line-height: 30px; border: 1px solid #1366ff; box-sizing: border-box; vertical-align: middle; font-size: 15px; padding: 0 10px; margin-left: 5px; }
+
+.list-sub-menus .head { font-weight: bold; margin-top: 30px; }
+.list-sub-menus .head:first-child { margin-top: 0; }
+
+.token-symbol .caption { border-radius: 50%; }
+
+.logo_img { border-radius: none; }
+.logo_img img { border: none; border-radius: none; }
+
+.token-symbol img { border: none; }
+.token-symbol.empty { width: 60px; }
+
+.admin select.ipt_normal { background: #FFF; }
+.admin .select.ipt_wrp:after { content: '▼'; display: inline-block; font-size: 13px; position: absolute; top: 0; right: 0; width: 40px; text-align: center; height: 50px; line-height: 50px; color: #BBB; }
+
+.mt10 { margin-top: 10px; }
+.mt30 { margin-top: 30px; }
+.mt50 { margin-top: 50px; }
+
+.tit_tip { display: block; border: 1px solid #d0d4d9; background: #F7F7F7; padding: 20px; margin: 15px 0; border-radius: 5px; line-height: 175%; }
+.tit_tip a { color: #1366ff; }
+
+.layer_invite { z-index: 700; }
+
+.case-company-1 { background-image: url('../img/sites/case_company_01.jpg'); }
+.case-company-2 { background-image: url('../img/sites/case_company_02.jpg'); }
+.case-company-3 { background-image: url('../img/sites/case_company_03.jpg'); }
+.case-company-4 { background-image: url('../img/sites/case_company_04.jpg'); }
+.case-company-5 { background-image: url('../img/sites/case_company_05.jpg'); }
+.case-company-6 { background-image: url('../img/sites/case_company_06.jpg'); }
+.case-company-7 { background-image: url('../img/sites/case_company_07.jpg'); }
+.case-company-8 { background-image: url('../img/sites/case_company_08.jpg'); }
+.case-company-9 { background-image: url('../img/sites/case_company_09.jpg'); }
+.case-company-10 { background-image: url('../img/sites/case_company_10.jpg'); }
+.case-company-11 { background-image: url('../img/sites/case_company_11.jpg'); }
+.case-company-12 { background-image: url('../img/sites/case_company_12.jpg'); }
+.case-company-13 { background-image: url('../img/sites/case_company_13.jpg'); }
+
+.full-screen {width: 100%; height: 100%}

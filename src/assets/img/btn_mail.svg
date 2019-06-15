@@ -1,0 +1,37 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #1366ff;
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" x="14.967" y="18.186" width="20.066" height="13.628" rx="1.414" ry="1.414"/>
+    </clipPath>
+  </defs>
+  <title>btn_mail</title>
+  <g>
+    <path class="cls-2" d="M25,0A25,25,0,1,1,0,25,25,25,0,0,1,25,0Z"/>
+    <g class="cls-3">
+      <g>
+        <polygon class="cls-4" points="15.87 18.186 24.999 26.579 34.129 18.186 15.87 18.186"/>
+        <polygon class="cls-4" points="21.977 25.269 15.734 31.814 34.263 31.814 28.014 25.275 24.999 28.046 21.977 25.269"/>
+        <polygon class="cls-4" points="14.967 31.068 21.19 24.545 14.967 18.824 14.967 31.068"/>
+        <polygon class="cls-4" points="35.033 31.07 35.033 18.823 28.801 24.551 35.033 31.07"/>
+      </g>
+    </g>
+  </g>
+</svg>
