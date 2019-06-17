@@ -294,7 +294,7 @@ a[disabled] , a.disabled {cursor: default; color: #e0e2e6 !important;  backgroun
 
 .button-normal {font-size: 14px; line-height: 42px; display: inline-block; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 20px;  cursor: pointer; text-align: center; vertical-align: middle; white-space: nowrap; color: #1366ff; border: 1px solid #1366ff; background-color: #fff;
 	/* main chain governance */ }
-.button-normal:hover { color: #1366ff; }
+.button-normal :hover { color: #1366ff; }
 .button-normal .fa {font-size: 16px; font-weight: 400;  display: inline-block; margin-top: -2px; vertical-align: middle; }
 .button-normal[data-size=small] {font-size: 12px; line-height: 22px;  padding: 0 10px; }
 .button-normal[data-size=medium] {font-size: 14px; line-height: 32px;  padding: 0 15px; }
@@ -1591,7 +1591,7 @@ header .nav_lst2 { right: 0; left: inherit; }
 .token_lst .bt .type2 li { float: left; width: 149px; }
 
 /* 가이드 박스 */
-.layout-guide-box {font-size: 12px; line-height: 17px;  position: relative; display: block; -webkit-box-sizing: border-box; box-sizing: border-box; margin-top: 30px; margin-bottom: 10px; padding: 15px 20px 15px 56px; border-radius: 5px; background-color: #f2f9ff; }
+.layout-guide-box {font-size: 13px; line-height: 17px;  position: relative; display: block; -webkit-box-sizing: border-box; box-sizing: border-box; margin-top: 5px; margin-bottom: 10px; padding: 15px 20px 15px 56px; border-radius: 5px; background-color: #f2f9ff; }
 .layout-guide-box.icon-top .fa { top: 15px; margin-top: 0; }
 .layout-guide-box .fa {font-size: 24px; position: absolute; top: 50%; left: 20px;  display: block; margin-top: -12px; color: #1b2733; }
 .layout-guide-box a { color: #1366ff; }
@@ -2741,10 +2741,10 @@ dl.layout-guide-message[data-state=information] dd { color: rgba(0, 181, 128, .8
 .overview_top .rates2 strong em::before {display: inline-block; width: 12px; height: 7px; margin: 0 14px;  content: ''; vertical-align: 5px; background: url(../img/img_equal.png) no-repeat 0 0; }
 .overview_top .rates2 span {font-size: 16px;  display: block; margin-top: 4px; color: #8c98a4; }
 
-.overview_cnt { overflow: hidden; margin-top: 30px; padding: 20px 20px 5px; border: 1px solid #d0d4d9; }
+.overview_cnt { overflow: hidden; font-size: 15px;}
 .overview_cnt table { width: 100%; }
-.overview_cnt table th { width: 194px; padding-bottom: 18px; text-align: left; vertical-align: top; color: #1b2733; }
-.overview_cnt table td { padding-bottom: 18px; vertical-align: top; }
+.overview_cnt table th { width: 194px; padding-bottom:10px; text-align: left; vertical-align: bottom; color: #1b2733; }
+.overview_cnt table td { padding-bottom: 10px; vertical-align: initial; text-align: end; }
 .overview_cnt .pt_lst { width: 100%; margin-bottom: -20px; }
 .overview_cnt .pt_lst li { display: inline-block; width: 270px; margin-bottom: 20px; vertical-align: top; }
 .overview_cnt .pt_lst li a { display: inline-block; }

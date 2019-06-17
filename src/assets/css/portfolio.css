@@ -657,6 +657,7 @@ body.portfolio-navbar-expanded {
 */
 
 .portfolio-block {
+  padding-top: 40px !important;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
@@ -668,13 +669,6 @@ body.portfolio-navbar-expanded {
 }
 
 .portfolio-block-padding {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-.portfolio-block-padding-t {
-  padding-top: 5rem;
-}
-.portfolio-block-padding-b {
   padding-bottom: 5rem;
 }
 
